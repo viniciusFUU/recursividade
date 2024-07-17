@@ -58,3 +58,15 @@ def numeros_pares(valor):
         return 1 + numeros_pares(valor_sem_o_ultimo_elemento)
     else:
         return numeros_pares(valor_sem_o_ultimo_elemento)
+    
+def contagem_de_ocorrencias(palavra, letra):
+    qtd_letras = len(palavra)
+
+    if qtd_letras < 1: 
+        return 0
+    elif palavra[-1] == letra:
+        palavra = palavra[0:-1]
+        return 1+ contagem_de_ocorrencias(palavra, letra)
+    else:
+        palavra = palavra[0:-1]
+        return contagem_de_ocorrencias(palavra, letra)
