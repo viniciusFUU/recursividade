@@ -78,3 +78,9 @@ def soma_elementos_lista(lista):
         ultimo_elemento = lista[-1]
         lista_sem_ultimo_elemento = lista[:-1]
         return ultimo_elemento + soma_elementos_lista(lista_sem_ultimo_elemento)
+    
+def fatorial(numero):
+    if numero < 1:
+        return 1
+    
+    return numero * fatorial(numero-1)

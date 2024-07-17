@@ -4,5 +4,6 @@ from treino_recursividade import fibonacci
 from treino_recursividade import numeros_pares
 from treino_recursividade import contagem_de_ocorrencias
 from treino_recursividade import soma_elementos_lista
+from treino_recursividade import fatorial
 
-print(soma_elementos_lista([1, 2, 3, 4]))
+print(fatorial(5))
