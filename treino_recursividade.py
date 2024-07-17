@@ -70,3 +70,11 @@ def contagem_de_ocorrencias(palavra, letra):
     else:
         palavra = palavra[0:-1]
         return contagem_de_ocorrencias(palavra, letra)
+    
+def soma_elementos_lista(lista):
+    if len(lista) < 1:
+        return 0
+    if len(lista) >= 1:
+        ultimo_elemento = lista[-1]
+        lista_sem_ultimo_elemento = lista[:-1]
+        return ultimo_elemento + soma_elementos_lista(lista_sem_ultimo_elemento)
