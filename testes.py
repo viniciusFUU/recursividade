@@ -1,0 +1,6 @@
+from treino_recursividade import soma_recursiva
+from treino_recursividade import potencia_recursiva
+from treino_recursividade import fibonacci
+from treino_recursividade import numeros_pares
+
+print(numeros_pares(7852314020308808))
